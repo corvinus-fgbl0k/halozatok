@@ -1,0 +1,41 @@
+﻿h1 {text-align:center;}
+
+div {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+}
+span{
+    color:blue;
+    font-weight: bold;
+}
+
+a {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+    a:hover {
+        background-color: red;
+    }
+
+#listak {
+    background-color: lightgray
+}
+
+.feher {
+    background-color: white;
+    border-radius: 25px;
+    width: 175px;
+}
+
+.sorrend {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
