@@ -1,0 +1,134 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-weight: bold;
+}
+
+#article, #middle, #aside, #footer, #header, #nav {
+    padding: 20px;
+}
+
+#header {
+    background-color: tomato;
+}
+
+#nav {
+    background-color: deepskyblue;
+}
+
+#article {
+    background-color: gold;
+    text-align: left;
+}
+#middle{
+    background-color:coral;
+}
+
+#aside {
+    background-color: lightgreen;
+    text-align: left;
+}
+
+#footer {
+    background-color: hotpink;
+}
+
+#nav {
+    display: flex;
+}
+
+    #nav a {
+        text-decoration: none;
+        color: white;
+        flex: 1 1 auto;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 800px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+
+    #main {
+        display: flex;
+    }
+
+    #nav, #header {
+        order: -1;
+    }
+
+    #article {
+        flex: 1 1 25%;
+    }
+
+    #middle{
+        flex: 1 1 50%
+    }
+
+    #aside {
+        flex: 1 1 25%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/*cv.css-ből másolva*/
+
+h1, h2 {
+    text-align: center;
+}
+
+div {
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+}
+
+span {
+    color: blue;
+    font-weight: bold;
+}
+
+a {
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+    a:hover {
+        background-color: red;
+    }
+
+
+.feher {
+    background-color: white;
+    border-radius: 25px;
+    width: 225px;
+}
+
+.sorrend {
+    font-style: italic;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
