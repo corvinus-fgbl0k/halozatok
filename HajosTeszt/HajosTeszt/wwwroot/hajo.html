@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        html, body {
+            height:100%
+        }
+
+        div {
+            margin: 10px;
+            border: 1px solid blue;
+        }
+
+        #külső {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #kérdés_szöveg {
+        }
+
+        #középső {
+            display: flex;
+            flex-direction: row;
+            flex-grow: 1;
+        }
+
+        #válaszok {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        #vezérlő {
+            display: flex;
+            flex-direction: row;
+            justify-content:space-between;
+            border: none;
+        }
+
+        #kép {
+            flex-grow: 0;
+            flex-shrink: 0;            
+        }
+
+        .gomb {
+            padding: 10px;
+            width: 100px;
+            border-radius: 25px;
+            background-color: darkcyan;
+            color: white;
+            text-align: center;
+        }
+
+        .kerdes {
+        }
+        .kattintható:hover{
+            background-color: lightblue;
+            color: white;
+        }
+        .jo{
+            background-color: green;
+        }
+        .rossz{
+            background-color: red;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div id="külső">
+        <div id="kérdés_szöveg">
+            Kérdés szövege
+        </div>
+
+        <div id="középső">
+            <div id="válaszok">
+                <div id="válasz1" class="kerdes kattintható">Válasz 1</div>
+                <div id="válasz2" class="kerdes kattintható" >Válasz 2</div>
+                <div id="válasz3" class="kerdes kattintható">Válasz 3</div>
+            </div>
+            <div id="kép">
+                <img id="kép1" src="https://szoft1.comeback.hu/hajo/teszt-0050.jpg" />
+            </div>
+        </div>
+        <div id="vezérlő">
+            <div class="gomb kattintható">Vissza</div>
+            <div class="gomb kattintható">Előre</div>
+        </div>
+    </div>
+</body>
+</html>
